@@ -1,0 +1,53 @@
+/* COMMON */
+body {
+    font-family: "Roboto", -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+/* HEADER */
+/* logo */
+header .logo img {
+    max-width: 160px;
+}
+
+/* nav */
+/* menu centrale */
+header nav .menu_cx {
+    color: #333742;
+}
+
+header nav .menu li {
+    display: inline-block;
+    list-style: none;
+}
+
+header nav .menu a {
+    color: #293147;
+    text-decoration: none;
+}
+
+header nav .menu #signup {
+    color: #2385fd;
+    border: 1px solid #2385fd;
+}
+
+/* menu destra */
+header nav .menu_dx {
+    text-align: right;
+}
+
+/* burger menu */
+header nav .burger_menu {
+    font-size: 20px;
+    color: #2385fd;
+    text-align: right;
+}
+
+/* jumbotron */
+header .jumbotron {
+    background-image: url(../img/ms-jumbo.jpg);
+    background-size: cover;
+}
