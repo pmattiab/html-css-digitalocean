@@ -267,7 +267,40 @@ header .jumbotron .jumb_box a {
     background-color: white;
 }
 
-/* sezione developer */
+/* sezione server */
+#servers h2 {
+    color: white;
+}
+
+#servers li {
+    color: white;
+    padding: 5px;
+}
+
+#servers .list-inline li:first-child {
+    width: 20%;
+    font-weight: 500;
+    padding-left: 10px;
+    padding-right: 40px;
+}
+
+#servers .list-inline .server_name {
+    width: 58%;
+}
+
+#servers .list-inline li:last-child {
+    text-align: right;
+    width: 20%;
+    border-bottom: none;
+}
+
+#servers .server_list>li {
+    border-bottom: 1px solid white;
+}
+
+#servers .server_list>li:last-child {
+    border-bottom: none;
+}
 
 /* MEDIA QUERY */
 /* extra small screen */
