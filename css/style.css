@@ -8,15 +8,10 @@ img {
 }
 
 /* HEADER */
-/* logo */
-header .logo img {
-    max-width: 160px;
-}
-
-/* nav */
-/* menu centrale */
-header nav .menu_cx {
-    color: #333742;
+/* top nav */
+header .top_nav {
+    font-size: 16px;
+    margin: 20px 0;
 }
 
 header nav .menu li {
@@ -29,20 +24,57 @@ header nav .menu a {
     text-decoration: none;
 }
 
-header nav .menu #signup {
-    color: #2385fd;
-    border: 1px solid #2385fd;
+/* logo */
+header .logo img {
+    vertical-align: middle;
+}
+
+/* menu centrale */
+header nav .menu_cx {
+    text-align: right;
+    color: #333742;
+    padding-top: 7px;
+}
+
+header nav .menu_cx ul {
+    padding: 0;
+}
+
+header nav .menu_cx li {
+    margin-right: 15px;
 }
 
 /* menu destra */
 header nav .menu_dx {
     text-align: right;
+    padding-top: 7px;
+}
+
+header nav .menu_dx ul {
+    padding: 0;
+}
+
+header nav .menu_dx li {
+    margin-left: 15px;
+}
+
+header nav .menu #signup {
+    padding: 10px;
+    color: #006aff;
+    border: 1px solid #006aff;
+    border-radius: 5px;
+}
+
+header nav .menu #signup:hover {
+    color: white;
+    background-color: #006aff;
+    border: 1px solid white;
 }
 
 /* burger menu */
 header nav .burger_menu {
-    font-size: 20px;
-    color: #2385fd;
+    font-size: 30px;
+    color: #006aff;
     text-align: right;
 }
 
@@ -50,4 +82,81 @@ header nav .burger_menu {
 header .jumbotron {
     background-image: url(../img/ms-jumbo.jpg);
     background-size: cover;
+    padding: 60px 0;
 }
+
+header .jumbotron h1 {
+    color: white;
+    font-size: 65px;
+}
+
+header .jumbotron .jumb_title span {
+    color: white;
+    opacity: 0.8;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+header .jumbotron .jumb_box {
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px 20px;
+}
+
+header .jumbotron .jumb_box h2 {
+    color: #293147;
+}
+
+header .jumbotron .jumb_box h3 {
+    font-size: 30px;
+    color: #006aff;
+    margin-top: 15px;
+}
+
+header .jumbotron form input {
+    padding-left: 7px;
+    height: 45px;
+    border: 1px solid #e6e6e6;
+    box-shadow: none;
+}
+
+header .jumbotron form input::placeholder {
+    font-size: 17px;
+    color: dimgray;
+}
+
+header .jumbotron .create_btn {
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+    width: 100%;
+    background-color: #579aff;
+    border: 1px solid #579aff;
+}
+
+header .jumbotron .google_btn {
+    font-size: 15px;
+    font-weight: 500;
+    color: dimgray;
+    background-color: white;
+    width: 100%;
+    position: relative;
+    border: none;
+    box-shadow: 1.5px 1.5px 3px rgba(0, 0, 0, 0.2);
+}
+
+header .jumbotron img {
+    height: 20px;
+    width: auto;
+    position: absolute;
+    left: 2%;
+}
+
+header .jumbotron .jumb_box a {
+    text-decoration: underline;
+    color: #006aff;
+}
+
+/* MAIN */
+/* sezione clienti */
