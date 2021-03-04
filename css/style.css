@@ -3,8 +3,34 @@ body {
     font-family: "Roboto", -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+h2 {
+    font-size: 35px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+.blue_text {
+    color: #021d4e;
+}
+
+.white_text,
+.white_text li {
+    color: white;
+}
+
+.gray_text,
+.gray_text li {
+    color: #536384;
+}
+
+.sub_title {
+    font-size: 22px;
+}
+
 .blue_bg {
-    background-image: linear-gradient(#001f9a, #0048c6);
+    background-image: linear-gradient(#0048c6, #001f9a);
 }
 
 img {
@@ -98,10 +124,9 @@ header .jumbotron h1 {
     font-size: 65px;
 }
 
-header .jumbotron .jumb_title p {
+.jumbotron p {
     color: gainsboro;
-    font-size: 20px;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 header .jumbotron .jumb_box {
@@ -110,12 +135,7 @@ header .jumbotron .jumb_box {
     padding: 30px 20px;
 }
 
-header .jumbotron .jumb_box h2 {
-    color: #293147;
-}
-
 header .jumbotron .jumb_box h3 {
-    font-size: 30px;
     color: #006aff;
     margin-top: 15px;
 }
@@ -139,7 +159,6 @@ header .jumbotron form input::placeholder {
 header .jumbotron .create_btn {
     font-size: 15px;
     font-weight: 500;
-    color: white;
     width: 100%;
     background-color: #579aff;
     border: 1px solid #579aff;
@@ -201,6 +220,11 @@ header .jumbotron .jumb_box a {
 #services ul {
     padding-left: 10px;
     border-left: 1px solid gray;
+}
+
+#services li {
+    font-size: 20px;
+    padding: 10px 0;
 }
 
 #services .img_box img {
@@ -268,12 +292,7 @@ header .jumbotron .jumb_box a {
 }
 
 /* sezione server */
-#servers h2 {
-    color: white;
-}
-
 #servers li {
-    color: white;
     padding: 5px;
 }
 
@@ -302,11 +321,41 @@ header .jumbotron .jumb_box a {
     border-bottom: none;
 }
 
+/* sezione crea account */
+#start .btn {
+    background-color: white;
+}
+
+/* FOOTER */
+footer {
+    background-color: #031c4e;
+}
+
+footer .footer_img {
+    max-width: 50px;
+    height: auto;
+}
+
+footer .social .menu li {
+    padding-left: 10px;
+    font-size: 25px;
+    display: inline-block;
+    text-align: center;
+}
+
 /* MEDIA QUERY */
 /* extra small screen */
 @media screen and (max-width: 767px) {
     main #customers li {
         width: calc((100% / 2) - 2px);
         padding: 0 5%;
+    }
+}
+
+/* small screen */
+@media screen and (min-width: 768px)
+and (max-width: 991px) {
+    header .jumbotron h1 {
+        font-size: 38px;
     }
 }
