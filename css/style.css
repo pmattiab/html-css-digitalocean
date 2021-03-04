@@ -83,6 +83,7 @@ header .jumbotron {
     background-image: url(../img/ms-jumbo.jpg);
     background-size: cover;
     padding: 60px 0;
+    margin-bottom: 0;
 }
 
 header .jumbotron h1 {
@@ -90,9 +91,8 @@ header .jumbotron h1 {
     font-size: 65px;
 }
 
-header .jumbotron .jumb_title span {
-    color: white;
-    opacity: 0.8;
+header .jumbotron .jumb_title p {
+    color: gainsboro;
     font-size: 20px;
     font-weight: 400;
 }
@@ -160,3 +160,38 @@ header .jumbotron .jumb_box a {
 
 /* MAIN */
 /* sezione clienti */
+main #customers {
+    background-color: whitesmoke;
+    text-align: center;
+    padding: 40px 0 30px;
+}
+
+main #customers h4 {
+    color: gray;
+    text-transform: uppercase;
+}
+main #customers a {
+    font-size: 17px;
+    color: #006aff;
+}
+
+main #customers ul {
+    padding: 0;
+}
+
+main #customers li {
+    display: inline-block;
+    list-style: none;
+    vertical-align: middle;
+    width: calc((100% / 6) - 3px);
+    padding: 0 0.5%;
+}
+
+/* MEDIA QUERY */
+/* extra small screen */
+@media screen and (max-width: 767px) {
+    main #customers li {
+        width: calc((100% / 2) - 2px);
+        padding: 0 5%;
+    }
+}
