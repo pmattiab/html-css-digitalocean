@@ -7,6 +7,10 @@ img {
     width: 100%;
 }
 
+li {
+    list-style-type: none;
+}
+
 /* HEADER */
 /* top nav */
 header .top_nav {
@@ -98,7 +102,6 @@ header .jumbotron .jumb_title p {
 }
 
 header .jumbotron .jumb_box {
-    text-align: center;
     background-color: white;
     border-radius: 10px;
     padding: 30px 20px;
@@ -160,31 +163,44 @@ header .jumbotron .jumb_box a {
 
 /* MAIN */
 /* sezione clienti */
-main #customers {
+#customers {
     background-color: whitesmoke;
-    text-align: center;
     padding: 40px 0 30px;
 }
 
-main #customers h4 {
+#customers h4 {
     color: gray;
     text-transform: uppercase;
 }
-main #customers a {
+#customers a {
     font-size: 17px;
     color: #006aff;
 }
 
-main #customers ul {
+#customers ul {
     padding: 0;
 }
 
-main #customers li {
+#customers li {
     display: inline-block;
-    list-style: none;
     vertical-align: middle;
     width: calc((100% / 6) - 3px);
     padding: 0 0.5%;
+}
+
+/* sezione servizi */
+#services ul {
+    padding-left: 10px;
+    border-left: 1px solid gray;
+}
+
+#services .img_box img {
+    max-width: 40px;
+}
+
+/* sezione esempi */
+#examples {
+    background-color: whitesmoke;
 }
 
 /* MEDIA QUERY */
