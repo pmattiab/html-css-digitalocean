@@ -3,12 +3,25 @@ body {
     font-family: "Roboto", -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+.blue_bg {
+    background-image: linear-gradient(#001f9a, #0048c6);
+}
+
 img {
     width: 100%;
 }
 
+ul {
+    padding: 0;
+    margin: 0;
+}
+
 li {
     list-style-type: none;
+}
+
+a, a:hover {
+    text-decoration: none;
 }
 
 /* HEADER */
@@ -20,12 +33,10 @@ header .top_nav {
 
 header nav .menu li {
     display: inline-block;
-    list-style: none;
 }
 
 header nav .menu a {
     color: #293147;
-    text-decoration: none;
 }
 
 /* logo */
@@ -40,10 +51,6 @@ header nav .menu_cx {
     padding-top: 7px;
 }
 
-header nav .menu_cx ul {
-    padding: 0;
-}
-
 header nav .menu_cx li {
     margin-right: 15px;
 }
@@ -52,10 +59,6 @@ header nav .menu_cx li {
 header nav .menu_dx {
     text-align: right;
     padding-top: 7px;
-}
-
-header nav .menu_dx ul {
-    padding: 0;
 }
 
 header nav .menu_dx li {
@@ -124,6 +127,10 @@ header .jumbotron form input {
     box-shadow: none;
 }
 
+header .jumbotron .form-group {
+    margin-bottom: 10px;
+}
+
 header .jumbotron form input::placeholder {
     font-size: 17px;
     color: dimgray;
@@ -177,10 +184,6 @@ header .jumbotron .jumb_box a {
     color: #006aff;
 }
 
-#customers ul {
-    padding: 0;
-}
-
 #customers li {
     display: inline-block;
     vertical-align: middle;
@@ -189,6 +192,12 @@ header .jumbotron .jumb_box a {
 }
 
 /* sezione servizi */
+#services .small_container {
+    width: 90%;
+    max-width: 930px;
+    margin: auto;
+}
+
 #services ul {
     padding-left: 10px;
     border-left: 1px solid gray;
@@ -198,10 +207,67 @@ header .jumbotron .jumb_box a {
     max-width: 40px;
 }
 
-/* sezione esempi */
-#examples {
+/* sezione developer e development team */
+#developers, #dev_teams {
     background-color: whitesmoke;
 }
+
+#developers .small_container,
+#dev_teams .small_container {
+    width: 90%;
+    max-width: 700px;
+    margin: auto;
+}
+
+#developers .slide,
+#dev_teams .slide {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+}
+
+#dev_teams .slide img {
+    max-width: 300px;
+    margin: auto;
+}
+
+#developers .left_chevron,
+#dev_teams .left_chevron {
+    font-size: 35px;
+    color: gray;
+    text-align: right;
+}
+
+#developers .right_chevron,
+#dev_teams .right_chevron {
+    font-size: 35px;
+    color: #293147;
+}
+
+#developers .circle li,
+#dev_teams .circle li {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    border: 1px solid #006aff;
+    border-radius: 50%;
+}
+
+#developers .circle li:first-child,
+#dev_teams .circle li:first-child {
+    background-color: #006aff;
+}
+
+/* sezione necessita */
+#needs .img_box img {
+    max-width: 40px;
+}
+
+#dev_teams .slide {
+    background-color: white;
+}
+
+/* sezione developer */
 
 /* MEDIA QUERY */
 /* extra small screen */
