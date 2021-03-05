@@ -185,6 +185,12 @@ header .jumbotron .create_btn {
     border: 1px solid #579aff;
 }
 
+header .jumbotron .create_btn:hover {
+    color: white;
+    background-color: #001f9a;
+    border: 1px solid #001f9a;
+}
+
 header .jumbotron .google_btn {
     font-size: 15px;
     font-weight: 500;
@@ -203,9 +209,14 @@ header .jumbotron img {
     left: 2%;
 }
 
-header .jumbotron .jumb_box a {
+header .jumbotron .terms {
     text-decoration: underline;
     color: #006aff;
+}
+
+header .jumbotron .terms:hover {
+    text-decoration: none;
+    color: #001f9a;
 }
 
 /* MAIN */
@@ -371,6 +382,10 @@ header .jumbotron .jumb_box a {
 }
 
 /* sezione crea account */
+#start h2 {
+    margin-bottom: 30px;
+}
+
 #start .btn {
     color: #006aff;
     background-color: white;
@@ -381,8 +396,7 @@ header .jumbotron .jumb_box a {
 }
 
 /* FOOTER */
-footer,
-footer a {
+footer, footer a {
     color: darkgray;
     background-color: #031c4e;
 }
@@ -390,6 +404,19 @@ footer a {
 footer .footer_img {
     max-width: 50px;
     height: auto;
+    margin-bottom: 10px;
+}
+
+footer .copyright {
+    margin-bottom: 15px;
+}
+
+footer .copyright p {
+    margin-bottom: 0;
+}
+
+footer .copyright span {
+    color: gray;
 }
 
 footer .social .menu li {
@@ -397,6 +424,14 @@ footer .social .menu li {
     font-size: 25px;
     display: inline-block;
     text-align: center;
+}
+
+footer .social .menu li:first-child {
+    padding-left: 0;
+}
+
+footer .footer_nav {
+    margin-top: 25px;
 }
 
 /* MEDIA QUERY */
