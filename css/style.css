@@ -10,11 +10,15 @@ body {
 
 h2 {
     font-size: 35px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 h3 {
     font-size: 20px;
+}
+
+h5 {
+    font-size: 18px;
 }
 
 .blue_text {
@@ -29,6 +33,16 @@ h3 {
 .gray_text,
 .gray_text li {
     color: #536384;
+}
+
+.blue_link a {
+    font-size: 17px;
+    color: #006aff;
+}
+
+.aqua_link a {
+    font-size: 15px;
+    color: aqua;
 }
 
 .sub_title {
@@ -70,11 +84,6 @@ header nav .menu li {
 
 header nav .menu a {
     color: #293147;
-}
-
-/* logo */
-header .logo img {
-    vertical-align: middle;
 }
 
 /* menu centrale */
@@ -128,12 +137,12 @@ header .jumbotron {
 
 header .jumbotron h1 {
     color: white;
-    font-size: 65px;
+    font-size: 60px;
 }
 
 .jumbotron p {
-    color: gainsboro;
-    font-weight: 500;
+    color: lightgray;
+    font-weight: 400;
 }
 
 header .jumbotron .jumb_box {
@@ -142,9 +151,14 @@ header .jumbotron .jumb_box {
     padding: 30px 20px;
 }
 
-header .jumbotron .jumb_box h3 {
+header .jumbotron .jumb_box .get_now {
+    font-size: 35px;
+    font-weight: 500;
     color: #006aff;
-    margin-top: 15px;
+}
+
+header .jumbotron form {
+    margin: 10px 0;
 }
 
 header .jumbotron form input {
@@ -205,10 +219,6 @@ header .jumbotron .jumb_box a {
     color: gray;
     text-transform: uppercase;
 }
-#customers a {
-    font-size: 17px;
-    color: #006aff;
-}
 
 #customers li {
     display: inline-block;
@@ -244,30 +254,62 @@ header .jumbotron .jumb_box a {
 #developers, #dev_teams {
     background-color: whitesmoke;
 }
-
-#developers .slide,
-#dev_teams .slide {
-    max-width: 600px;
-    margin: auto;
-    text-align: center;
+#developers .slideshow,
+#dev_teams .slideshow {
+    margin-bottom: 20px;
 }
 
-#dev_teams .slide img {
+#developers span {
+    margin-bottom: 20px;
+}
+
+#developers .slider li,
+#dev_teams .slider li {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#developers .slide_img,
+#dev_teams .slide_img {
+    max-width: 600px;
+}
+
+#dev_teams h2 {
+    margin-bottom: 100px;
+}
+
+#dev_teams .slide_img {
+    padding: 70px 0;
+    background-color: white;
+}
+
+#dev_teams .feed_text {
+    font-size: 22px;
+    margin: 20px 0;
+}
+
+#dev_teams img {
     max-width: 300px;
     margin: auto;
 }
 
-#developers .left_chevron,
-#dev_teams .left_chevron {
+#developers .fa-chevron-left,
+#dev_teams .fa-chevron-left {
     font-size: 35px;
     color: gray;
-    text-align: right;
+    margin-right: 20px;
 }
 
-#developers .right_chevron,
-#dev_teams .right_chevron {
+#developers .fa-chevron-right,
+#dev_teams .fa-chevron-right {
     font-size: 35px;
     color: #293147;
+    margin-left: 20px;
+}
+
+#developers .circle,
+#dev_teams .circle {
+    padding: 10px 0;
 }
 
 #developers .circle li,
@@ -285,12 +327,16 @@ header .jumbotron .jumb_box a {
 }
 
 /* sezione necessita */
+#needs h2 {
+    margin-bottom: 30px;
+}
+
 #needs .img_box img {
     max-width: 40px;
 }
 
-#dev_teams .slide {
-    background-color: white;
+#needs .needs_box {
+    margin-bottom: 30px;
 }
 
 /* sezione server */
@@ -306,12 +352,13 @@ header .jumbotron .jumb_box a {
 }
 
 #servers .list-inline .server_name {
-    width: 58%;
+    color: silver;
+    width: 53%;
 }
 
 #servers .list-inline li:last-child {
     text-align: right;
-    width: 20%;
+    width: 25%;
     border-bottom: none;
 }
 
@@ -325,11 +372,18 @@ header .jumbotron .jumb_box a {
 
 /* sezione crea account */
 #start .btn {
+    color: #006aff;
     background-color: white;
 }
 
+#start .btn:hover {
+    background-color: lightgray;
+}
+
 /* FOOTER */
-footer {
+footer,
+footer a {
+    color: darkgray;
     background-color: #031c4e;
 }
 
@@ -353,13 +407,27 @@ footer .social .menu li {
     }
 
     main #customers li {
-        width: calc((100% / 2) - 2px);
+        width: calc((100% / 2) - 3px);
         padding: 0 5%;
     }
 
-    #developers .slide,
-    #dev_teams .slide {
+    #services .row {
+        padding: 0;
+    }
+
+    #developers .slide_img,
+    #dev_teams .slide_img {
         max-width: 300px;
+    }
+
+    #developers .slider li:first-child,
+    #dev_teams .slider li:first-child {
+        display: none;
+    }
+
+    #developers .slider li:last-child,
+    #dev_teams .slider li:last-child {
+        display: none;
     }
 }
 
@@ -370,8 +438,12 @@ and (max-width: 991px) {
         font-size: 38px;
     }
 
-    #developers .slide,
-    #dev_teams .slide {
+    #services .row {
+        padding: 0 30px;
+    }
+
+    #developers .slide_img,
+    #dev_teams .slide_img {
         max-width: 380px;
     }
 }
