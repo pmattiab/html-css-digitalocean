@@ -36,7 +36,6 @@ h5 {
 }
 
 .blue_link a {
-    font-size: 17px;
     color: #006aff;
 }
 
@@ -210,11 +209,15 @@ header .jumbotron img {
 }
 
 header .jumbotron .terms {
+    font-size: 14px;
+}
+
+header .jumbotron .terms a {
     text-decoration: underline;
     color: #006aff;
 }
 
-header .jumbotron .terms:hover {
+header .jumbotron .terms a:hover {
     text-decoration: none;
     color: #001f9a;
 }
@@ -249,12 +252,20 @@ header .jumbotron .terms:hover {
     padding: 10px 0;
 }
 
-#services .row {
-    padding: 0 80px;
+/* cambiare padding del row anche nelle media query */
+/* cambiare padding del row anche nelle media query */
+/* cambiare padding del row anche nelle media query */
+/* cambiare padding del row anche nelle media query */
+#services .services_section {
+    padding: 0 40px;
 }
 
 #services .services_box {
     margin-bottom: 30px;
+}
+
+#services .services_list {
+    padding-left: 90px;
 }
 
 #services .img_box {
@@ -296,7 +307,18 @@ header .jumbotron .terms:hover {
 
 #dev_teams .feed_text {
     font-size: 22px;
-    margin: 20px 0;
+    margin: 20px 0 10px;
+}
+
+#dev_teams .feed_name {
+    font-size: 16px;
+    font-weight: 600;
+    color: #021d4e;
+}
+
+#dev_teams .feed_society {
+    color: #021d4e;
+    margin-bottom: 30px;
 }
 
 #dev_teams img {
@@ -434,6 +456,11 @@ footer .footer_nav {
     margin-top: 25px;
 }
 
+footer .footer_nav li {
+    font-size: 16px;
+    margin: 8px 0;
+}
+
 /* MEDIA QUERY */
 /* extra small screen */
 @media screen and (max-width: 767px) {
@@ -446,7 +473,8 @@ footer .footer_nav {
         padding: 0 5%;
     }
 
-    #services .row {
+    #services .services_list,
+    #services .services_section {
         padding: 0;
     }
 
@@ -473,8 +501,9 @@ and (max-width: 991px) {
         font-size: 38px;
     }
 
-    #services .row {
-        padding: 0 30px;
+    #services .services_list,
+    #services .services_section {
+        padding-left: 40px;
     }
 
     #developers .slide_img,
