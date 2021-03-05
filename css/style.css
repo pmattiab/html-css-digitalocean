@@ -252,20 +252,16 @@ header .jumbotron .terms a:hover {
     padding: 10px 0;
 }
 
-/* cambiare padding del row anche nelle media query */
-/* cambiare padding del row anche nelle media query */
-/* cambiare padding del row anche nelle media query */
-/* cambiare padding del row anche nelle media query */
-#services .services_section {
-    padding: 0 40px;
-}
-
 #services .services_box {
     margin-bottom: 30px;
 }
 
 #services .services_list {
     padding-left: 90px;
+}
+
+#services [class*=col-]>.row {
+    padding: 0 60px;
 }
 
 #services .img_box {
@@ -474,7 +470,7 @@ footer .footer_nav li {
     }
 
     #services .services_list,
-    #services .services_section {
+    #services [class*=col-]>.row {
         padding: 0;
     }
 
@@ -502,9 +498,9 @@ and (max-width: 991px) {
     }
 
     #services .services_list,
-    #services .services_section {
-        padding-left: 40px;
-    }
+    #services [class*=col-]>.row {
+        padding: 0 50px;
+    }    
 
     #developers .slide_img,
     #dev_teams .slide_img {
